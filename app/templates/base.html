@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}E-Commerce{% endblock %}</title>
+</head>
+<body>
+    <h1>E-Commerce Store</h1>
+    <nav>
+        <a href="{{ url_for('main.index') }}">Home</a> |
+        <a href="{{ url_for('main.about') }}">About</a> |
+        <a href="{{ url_for('main.cart') }}">Cart</a>
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
